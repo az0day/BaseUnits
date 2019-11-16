@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="lz4net" Version="1.0.15.93" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="Snappy.Sharp" Version="1.0.0" />
+    <PackageReference Include="Snappy.Standard" Version="0.2.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaseUnits.Core\BaseUnits.Core.csproj" />
+    <ProjectReference Include="..\BaseUnits.Markdowns\BaseUnits.Markdowns.csproj" />
+    <ProjectReference Include="..\BaseUnits.Serializers\BaseUnits.Serializers.csproj" />
+    <ProjectReference Include="..\ObjectSerialization\ObjectSerialization.csproj" />
+  </ItemGroup>
+
+</Project>
